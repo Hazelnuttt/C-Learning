@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdio.h>
 void main()
 {
     int a[10];
@@ -8,9 +7,9 @@ void main()
     for(i=0;i<10;i++)
         scanf("%d",&a[i]);
     printf("\n");
-    for(j=0;j<9;j++)
-        for(i=0;i<9-j;i++)
-        if(a[i]>a[i+1])
+    for(j=0;j<9;j++)/*比较9趟*/
+        for(i=0;i<9-j;i++)/*每趟比较9-j次*/
+        if(a[i]>a[i+1])/*相邻的比较*/
     {
         t=a[i];
         a[i]=a[i+1];
